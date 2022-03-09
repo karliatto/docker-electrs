@@ -4,7 +4,7 @@ RUN apt-get install -qqy librocksdb-dev=6.11.4-3 wget git
 
 ### Electrum Rust Server ###
 FROM base as electrs-build
-RUN apt-get install -qqy cargo clang cmake build-essential
+RUN apt-get install -qqy cargo clang cmake build-essential jq
 
 # Install electrs
 WORKDIR /build
